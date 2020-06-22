@@ -31,6 +31,7 @@
     #page-create-point form {
         margin: 80px 0 0 0;
         width: 100%;
+        padding: 30px 15px;
     }
 
     #page-create-point .field-group {
@@ -43,10 +44,6 @@
 
     #page-create-point form .field-group .field + .field {
         margin-left: 0;
-    }
-
-    #page-create-point form {
-        padding: 30px 15px;
     }
 
     #page-create-point button {
