@@ -1,3 +1,4 @@
+//INICIO MOSTRA ESTADOS
 function populateUfs() {
     const ufSelect = document.querySelector('select[name=uf')
     fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
@@ -12,7 +13,9 @@ function populateUfs() {
 }
 
 populateUfs()
+//FIM MOSTRA ESTADOS
 
+//INICIO MOSTRA CIDADES
 function getCities(event) {
     const citiesSelect = document.querySelector('[name=city]')
     const stateInput = document.querySelector('[name=state]')
@@ -44,8 +47,9 @@ function getCities(event) {
 document
     .querySelector('select[name=uf')
     .addEventListener('change', getCities)
+//FIM MOSTRA CIDADES
 
-//Itens de coleta
+//INICIO ITENS COLETA
 const itemsToCollect = document.querySelectorAll('.items-grid li')
 
 for (const item of itemsToCollect) {
@@ -82,3 +86,4 @@ function handleSelectedItem(event) {
 
     collectedItems.value = selectedItems
 }
+//FIM ITENS COLETA
