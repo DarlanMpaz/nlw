@@ -20,6 +20,14 @@
         align-items: center;
     }
 
+    #page-home main h1 {
+        font-size: 32px;
+    }
+
+    #page-home main p {
+        font-size: 18px;
+    }
+
     #page-create-point header, #page-search-results header {
         flex-direction: column;
     }
